@@ -1,1 +1,22 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+  <div class="profile">
+    <div class="header">
+      <h3><strong>William Queiroz</strong></h3>
+      <h4>william.hmqueiroz@gmail.com</h4>
+    </div>
+    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGjrldH4GrpOA/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=7-ubxMRC5_q0sPesueOtHFSIbCIVmweAhAfM43NWd_I" alt="">
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <mat-list role="list">
+    <h4><strong>Paginas</strong></h4>
+    <a mat-list-item  role="listitem" [routerLink]="['/']">Dashboard</a>
+    <a mat-list-item  role="listitem" [routerLink]="['/', 'posts']">Posts</a>
+    <a mat-list-item  role="listitem" [routerLink]="['/']">Icons</a>
+    <a mat-list-item  role="listitem" [routerLink]="['/']">Fonts</a>
+  </mat-list>
+
+  <mat-divider></mat-divider>
+
+</mat-nav-list>

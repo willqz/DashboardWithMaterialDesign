@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
+  menuOpen = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  menuToggler(any) {
+    this.menuOpen = !this.menuOpen;
   }
 
 }
