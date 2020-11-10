@@ -11,12 +11,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
+import { AreaComponent } from './widgets/area/area.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { CardComponent } from './widgets/card/card.component';
+import { CardtwoComponent } from './widgets/cardtwo/cardtwo.component';
+import { SynchronizedComponent } from './widgets/synchronized/synchronized.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AreaComponent,
+    CardComponent,
+    CardtwoComponent,
+    SynchronizedComponent
   ],
   imports: [
     CommonModule,
@@ -27,12 +37,18 @@ import {MatListModule} from '@angular/material/list';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    HighchartsChartModule,
+    MatGridListModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AreaComponent,
+    CardComponent,
+    CardtwoComponent,
+    SynchronizedComponent
   ]
 })
 export class SharedModule { }
