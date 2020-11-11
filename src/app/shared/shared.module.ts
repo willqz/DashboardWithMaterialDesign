@@ -17,6 +17,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { CardComponent } from './widgets/card/card.component';
 import { CardtwoComponent } from './widgets/cardtwo/cardtwo.component';
 import { SynchronizedComponent } from './widgets/synchronized/synchronized.component';
+import { BinarioConvertService } from '../BinarioConvert.service';
 
 @NgModule({
   declarations: [

@@ -1,1 +1,30 @@
-<p>posts works!</p>
+<div class="example-container">
+
+  <form [formGroup]="form">
+    <mat-form-field appearance="fill">
+      <input matInput formControlName="num1" autocomplete="off" placeholder="Number 1" maxlength="8" required>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="fill">
+      <input matInput formControlName="num2" autocomplete="off" placeholder="Number 2" maxlength="8" required>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="fill">
+      <mat-label>Operações</mat-label>
+      <select formControlName="operator" matNativeControl required>
+        <option value>Selecione</option>
+        <option value="1">SOMA</option>
+        <option value="2">SUBTRACAO</option>
+        <option value="3">DIVISAO</option>
+        <option value="4">MULTIPLICACAO</option>
+      </select>
+    </mat-form-field>
+  </form>
+
+  <button mat-raised-button color="primary"   [disabled]="!form.valid"  (click)="Calcular()">Calcular</button>
+
+<br/>
+
+<h2>{{result}}</h2>
+
+</div>

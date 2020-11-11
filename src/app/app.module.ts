@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layout/default/default.module';
+import { BinaryService } from './shared/services/Binary.service';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { DefaultModule } from './layout/default/default.module';
     BrowserAnimationsModule,
     DefaultModule
   ],
-  providers: [],
+  providers: [
+    BinaryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
